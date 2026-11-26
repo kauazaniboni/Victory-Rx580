@@ -1,5 +1,7 @@
 # VIctory RX 580 — progresso completo
 
+**GitHub:** https://github.com/kauazaniboni/Victory-Rx580
+
 Repo autocontido no estilo dos forks enviados: **código-fonte + histórico + scripts + config + evidências**, pronto para o GitHub. Snapshot atualizado em 26/11/2026.
 
 > Nada aqui altera `C:\Games\VItoriaBr\run.cmd`, `target\release\victory.exe` nem o dump do jogo (208 GB). O build estável e o jogo aberto foram preservados.
@@ -30,6 +32,8 @@ victory translate --cache --pipelines --jobs 6 <shaders.rpf> <exe> <dlls>
 `source/gtxfallback` é o único tree local com `--cache`. Ele salva a biblioteca a cada 20 s e retoma após crash. `VICTORY_SKIP_PIPELINES` atua no jogo, não no prebuild; para pular um pipeline que trava o compilador, adiciona-se a chave dele ao `prebuilt-pipelines.txt` do cache. Procedimento em `RUNBOOK-mesh580.md`.
 
 Mapa de chaves gerado com `list-mesh580-keys.cmd`: 28.164 pipelines (25.471 graphics, 2.693 compute). Helpers: `scripts\find-mesh580-key.ps1 -Hash <hash>` e `scripts\skip-mesh580-key.ps1 -Key <chave> -Hashes <hashes>`.
+
+Estado do prebuild em 26/11/2026: caches isolados em `victory-data\cache-mesh580-pre`. A primeira rodada traduziu todos os 25.985 containers e chegou a 11.599 pipelines antes de crashar no compilador AMD (`0xC0000005`). Foram marcadas 19 chaves da janela do crash como puladas; a segunda rodada voltou a crashar logo após carregar a biblioteca. O próximo passo é instrumentar o prebuild para registrar a chave exata antes de criar cada pipeline (ver `RUNBOOK-mesh580.md`).
 
 ## Estrutura
 

@@ -24,3 +24,10 @@ Não use captura GDI/PrintWindow (não reproduz o flip model). Use `run-mesh580-
 - `VICTORY_CACHE_DIR` no config/aplicativo aponta para `cache-mesh580-pre`; prebuild e run **precisam** dos mesmos `VICTORY_MESH_COMPUTE=1`, `VICTORY_MESH_WAVE64_DAG=1`, `VICTORY_MESH_INDIRECT=1`, senão a chave do cache muda (`-wave64-dag-` entra no hash).
 - `VICTORY_SKIP_PIPELINES` é lido pelo jogo, não pelo prebuild; por isso o passo 4 usa a lista `prebuilt-pipelines.txt`.
 - `VICTORY_MESH_TEST=skip|scissor` e `VICTORY_SKIP_PIPELINES` sozinhos apenas removem/clipam draws: não são correção de imagem.
+
+## Estado atual (26/11/2026)
+
+- 1ª rodada: 25.985 containers traduzidos; 11.599 pipelines feitos; crash `0xC0000005` em `gtxfallback` (sem log de exceção). Log preservado em `logs\mesh580_prebuild_built-crash1.log` / `mesh580_prebuild-crash1.err`.
+- Janela de 19 chaves ao redor do ponto do crash (`índices 11684–11702` do mapa) foi adicionada a `prebuilt-pipelines.txt`; os 15 hashes dessas chaves foram salvos em `logs\mesh580_skip_hashes.txt`.
+- 2ª rodada: biblioteca de 233.746 bytes carregada, crash imediato novamente. Ou seja, não basta pular pela ordem: é preciso saber a chave exata.
+- Próximo passo: copiar `source\gtxfallback` para um tree instrumentado e gravar a chave em `VICTORY_PREBUILD_CURRENT` **antes** de `HostPipeline::new`, com `--jobs 1`. A cada crash, essa chave entra em `prebuilt-pipelines.txt` e o prebuild retoma. Nunca patchar `source\stable-src` sem verificação visual.
