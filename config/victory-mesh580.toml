@@ -1,0 +1,6 @@
+# Separate cache/data for the experimental mesh-compute fallback build.
+[paths]
+game_dir = 'C:\Games\VItoriaBr\victory-data\game'
+cache_dir = 'C:\Games\VItoriaBr\victory-data\cache-mesh580'
+data_dir = 'C:\Games\VItoriaBr\victory-data\data'
+test_titles = []

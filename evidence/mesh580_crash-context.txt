@@ -1,0 +1,66 @@
+﻿  #4  amdxc64.dll+0xdad59e
+2026-11-25T18:51:43.092845Z  INFO victory_gpu::copystat:   copied from 0x2c86c840+0xa9a37c0 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #5  amdxc64.dll+0xea8d3f
+2026-11-25T18:51:43.094157Z  INFO victory_gpu::copystat:   copied from 0x2c88c840+0xa9837c0 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #6  amdxc64.dll+0xc12fc2
+2026-11-25T18:51:43.130452Z  INFO victory_gpu::copystat:   copied from 0x2c8ac840+0xa9637c0 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #7  amdxc64.dll+0xc1547b
+  #8  amdxc64.dll+0xc36aed
+2026-11-25T18:51:43.169326Z  INFO victory_gpu::copystat:   copied from 0x2c8cc840+0xa9437c0 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #9  amdxc64.dll+0xc1ba67
+2026-11-25T18:51:43.170515Z  INFO victory_gpu::copystat:   copied from 0x2c8ec840+0xa9237c0 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #10 amdxc64.dll+0x2d947d
+2026-11-25T18:51:43.172100Z  INFO victory_gpu::copystat:   copied from 0x2c90c8a0+0xa903760 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #11 amdxc64.dll+0x343fd6
+2026-11-25T18:51:43.174165Z  INFO victory_gpu::copystat:   copied from 0x2c92c8a0+0xa8e3760 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #12 amdxc64.dll+0x3462f5
+2026-11-25T18:51:43.181851Z  INFO victory_gpu::copystat:   copied from 0x2c94c8a0+0xa8c3760 (memory 0x40000): 0.0x/frame, 1.16 MB/frame, 0.00 ms/frame
+  #13 amdxc64.dll+0x345b93
+2026-11-25T18:51:43.183843Z  INFO victory_gpu::pipeline::host: host pipeline shaders=[vertex 81d37a4f438d0a0e, pixel 2896307ec3d5a1fd] ms=2069 rectangles=true
+2026-11-25T18:51:43.184103Z  INFO victory_gpu::bindless: heap views: 0 draws/frame index the heap (0 writing through it), 0 textures uploaded/frame; slots: 9402 buffer views (9374 ranges, 2051.4 MB, 3945 copies), 999 title-written textures (26 distinct); left null: buffer 48, unordered buffer 9, placed texture 581, other 0; host copies of title memory: 3455 (1291.6 MB); hulls 2064.4 MB, unordered 992.1 MB
+  #14 amdxc64.dll+0x34f28c
+2026-11-25T18:51:43.185179Z  INFO victory_gpu::bindless: heap views: 0 draws/frame index the heap (0 writing through it), 0 textures uploaded/frame; slots: 0 buffer views (0 ranges, 0.0 MB, 0 copies), 0 title-written textures (0 distinct); left null: buffer 0, unordered buffer 0, placed texture 0, other 0; host copies of title memory: 3455 (1291.6 MB); hulls 0.0 MB, unordered 0.0 MB
+  #15 amdxc64.dll+0x34e227
+2026-11-25T18:51:43.186585Z  INFO victory_gpu::shadow: buffer views off their copy's elements: 2 asked for/frame, 0 copies made/frame (0.0 KB), largest 0 bytes, 501 live
+  #16 amdxc64.dll+0x2da1b4
+  #17 amdxc64.dll+0xe9d23
+  #18 amdxc64.dll+0xe9765
+  #19 amdxc64.dll+0xe70d7
+  #20 amdxc64.dll+0xa11de
+  #21 amdxc64.dll+0x153a10
+  #22 amdxc64.dll+0x14cfe1
+  #23 D3D12Core.dll+0x5cbc9
+  #24 D3D12Core.dll+0x5c897
+  #25 D3D12Core.dll+0x5251d
+  #26 D3D12Core.dll+0x520b8
+  #27 D3D12Core.dll+0x7c969
+  #28 D3D12Core.dll+0x5078b
+  #29 d3d12.dll+0x1707
+  #30 D3D12Core.dll+0x204d6
+VIctory: first-chance exception 0xc0000005 at amdxc64.dll+0xdaa6f9 (read 0x8: nothing mapped there)
+  #31 D3D12Core.dll+0x7b99c
+  rax 0x1c73befbfa0 rbx 0x0 rcx 0x0 rdx 0x1c73d5cc5b8 rsi 0x1c7af233158 rdi 0x1c7af233158 rsp 0x127f0a740 rbp 0x1
+  r8 0x1c7af233158 r9 0x1c79ca44788 r10 0x1040000001 r11 0x3001e40000e00 r12 0x1c73d3708c8 r13 0x1c73d3708d0 r14 0x1c79ca44740 r15 0x20
+  #32 victory.exe+0x1b6797
+  #0  amdxc64.dll+0xdaa6f9
+  #33 victory.exe+0x1a0740
+  #34 victory.exe+0x19cf73
+  #1  amdxc64.dll+0xeaaf04
+  #2  amdxc64.dll+0xeabf1c
+  #35 victory.exe+0x23dd25
+  #3  amdxc64.dll+0xeaa8cf
+  #36 victory.exe+0x5a71f6
+  #4  amdxc64.dll+0xdad59e
+  #37 victory.exe+0x590dc3
+  #5  amdxc64.dll+0xea8d3f
+  #38 victory.exe+0x1a25ea
+  #6  amdxc64.dll+0xc12fc2
+  #39 victory.exe+0x23de10
+  #7  amdxc64.dll+0xc1547b
+VIctory: unhandled exception 0xc0000005 at amdxc64.dll+0xdaa6f9 (read 0x8: nothing mapped there)
+  #8  amdxc64.dll+0xc36aed
+  #9  amdxc64.dll+0xc1ba67
+  #10 amdxc64.dll+0x2d947d
+  rax 0x1c7a805b610 rbx 0x0 rcx 0x0 rdx 0x1c7b081aa68 rsi 0x1c73547ead0 rdi 0x1c73547ead0 rsp 0x12850ae90 rbp 0x1
+  #11 amdxc64.dll+0x343fd6
+  r8 0x1c73547ead0 r9 0x1c79aa58f20 r10 0x1040000001 r11 0x3001e40000e00 r12 0x1c7b00e3028 r13 0x1c7b00e3030 r14 0x1c79aa58ed8 r15 0x20

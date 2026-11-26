@@ -1,0 +1,6 @@
+# Separate cache/data for the L1DRE mangrove + mesh fallback build.
+[paths]
+game_dir = 'C:\Games\VItoriaBr\victory-data\game'
+cache_dir = 'C:\Games\VItoriaBr\victory-data\cache-mangrove'
+data_dir = 'C:\Games\VItoriaBr\victory-data\data'
+test_titles = []

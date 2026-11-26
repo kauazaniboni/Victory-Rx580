@@ -1,0 +1,10 @@
+﻿gtxfallback
+  HEAD=9b770602b4386b6c672022fecf3ec4ea194f399a
+  branch=codex/gtx-upstream-update
+  origin=https://github.com/ElSeba0811/VIctory.git
+mangrove2203
+  HEAD=3bc3f5532394e12f282c1590af05cfd9a5eb61f9
+  branch=gtx1070/mangrove-2203
+  origin=https://github.com/L1DRE/VIctory.git
+stable-src
+  copied working tree from C:\Games\VItoriaBr\src (no nested .git)

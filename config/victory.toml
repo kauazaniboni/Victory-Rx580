@@ -1,0 +1,7 @@
+# Paths live outside the source tree (C:\Games\VItoriaBr\src), as the tools require.
+[paths]
+# Put YOUR Xbox Series dump of the title here.
+game_dir = 'C:\Games\VItoriaBr\victory-data\game'
+cache_dir = 'C:\Games\VItoriaBr\victory-data\cache'
+data_dir = 'C:\Games\VItoriaBr\victory-data\data'
+test_titles = []
